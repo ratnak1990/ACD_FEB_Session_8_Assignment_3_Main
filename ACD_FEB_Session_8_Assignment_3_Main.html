@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Session 8 assignment 3</title>
+    </head>
+    <body>
+        <center>
+            <form action="login.asp" method="post">
+                <h4>Fill the form</h4>
+                <input type="email" placeholder="Email" required autofocus autocomplete="off" name="email"><br>
+                <input type="password" placeholder="Password" required pattern=".{6,}" name="password"><br>
+                <input type="url" placeholder="Your Project URL" required name="projectUrl"><br>
+                <input type="date" placeholder="Project Completion Date" id="date" required name="projectCompletionDate"><br>      
+                <input type="month" placeholder="Current Month" required name="currentMonth"><br>
+                <input type="week" placeholder="Current Week" required name="currentWeek"><br>
+                <input type="time" placeholder="Current Time" required name="currentTime"><br>
+                Select Color:<input type="color" required  name="color"><br>
+                Age: 
+                <input type="range" min="1" max="100" value="1" required onchange="updateAgeValue(this.value);">
+                <p id="age"> </p><br>
+                Hobbies:<input list="hobby" required name="hobbies">
+                <datalist id="hobby">
+                    <option value="Reading"></option>
+                    <option value="Listening Music"></option>
+                    <option value="Watch Movies"></option>
+                    <option value="Crafts Work"></option>
+                    <option value="Painting"></option>
+                </datalist> <br>
+                <input type="submit">
+            </form>
+        </center>
+        <script src="ACD_FEB_Session_8_Assignment_3_Main.js"></script>
+                
+    </body>
+</html>
